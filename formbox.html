@@ -1,0 +1,129 @@
+<html>
+
+<head>
+
+    <title>formbox</title>
+    <style>
+        input{
+            width: 250px;
+            height: 40px;
+            background-color:rgba(255,255,255,0.15);
+            border: 2px solid #00d9ff;
+            border-radius: 20px;
+            color: white;
+            font-size: 18px;
+            padding-left: 15px;
+            outline: none;
+            
+        }
+        input:focus{
+            box-shadow: 0 0 15px #00d9ff;
+            background-color:rgb(0, 0, 0);
+        }
+        label{
+            color:white(215, 138, 23);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+
+        button,
+        input[type="submit"],
+        input[type="reset"]
+        {
+            background: #545497;
+            color:white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 0 5px 0 #631db4;
+            cursor:pointer;
+
+        }
+        button:hover,
+        input[type:"submit"]:hover,
+        input[type:"reset"]:hover
+        {
+        background: #2980b9;
+
+        }
+        button:active,
+        input[type:"submit"]:active,
+        input[type:"reset"]:active
+        {
+            transform:translate(5px);
+            box-shadow: 0 0 0 #21618c;
+        }
+
+        input{
+            width: 250px;
+            height: 30px;
+            margin: 5px;
+        }
+        label{
+            display:inline-block;
+            width: 180px;
+        }
+        body{ margin:0;
+              height:100vh;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              background-image:url('c:/Users/sanzu/Desktop/form/image.jpg.jpg');
+              background-size:cover;
+}
+.box{
+    padding: 30px;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="box"> 
+
+    <br>
+    
+    <br>
+
+    <form name="userdetails" method="GET"  action="secondpage.html">
+
+        <label> FIRST NAME</label>
+        <input type="text" name="firstname" size="20">
+        <br />
+        <label> LAST NAME</label>
+        <input type="text" name="lastname" size="20">
+        <br />
+        <label>FATHER NAME</label>
+        <input type="text" name="fname" size="20">
+        <br>
+        <label>ROLL NUMBER</label>
+        <input type="number" name="rnumber" size="20">
+        <br>
+
+        <label> EMAIL</label>
+        <input type="email" name="email" pattern="[a-z0-9._+-]+@[a-z0-9._+]+\.[a-z]{2,}$" value="" size="20">
+        <br>
+        <label> PHONE NUMBER</label>
+        <input type="tel" name="number" pattern="[0-9]{10}" maxlength="10" size="20">
+        <br>
+        <label>PASSWORD</label>
+        <input type="password" name="password" pattern="[a-z0-9._+-]+@[a-z0-9._+]+\.[a-z]{2,}$" maxlength="8" size="20">
+
+
+        <br/>
+        <br>
+
+
+        <input type="submit" name="submit" value="SUBMIT" size="20">
+        <input type="reset" name="reset" value="RESET" size="20">
+
+    </form>
+    </div>
+
+</body>
+
+</html>

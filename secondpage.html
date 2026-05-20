@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    head{<h1>Information Page</h1>}
+    body {
+              margin:0;
+              height:100vh;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              background-image:url('c:/Users/sanzu/Desktop/form/image.jpg.jpg');
+              background-size:cover;
+    }
+  </style>
+
+<head>
+  <title>Second Page</title>
+</head>
+
+<body>
+
+
+
+<h2 id="result"></h2>
+
+<script>
+
+let params = new URLSearchParams(window.location.search);
+
+let firstname = params.get("firstname");
+let lastname = params.get("lastname");
+let fname = params.get("fname");
+let rnumber = params.get("rnumber");
+let email = params.get("email");
+let number = params.get("number");
+let password = params.get("password")
+
+document.getElementById("result").innerHTML =
+"First Name: " + firstname + "<br><br>" +
+"Last Name: " + lastname + "<br><br>" +
+"Father Name: " + fname + "<br><br>" +
+"Roll Number: " + rnumber + "<br><br>" +
+"Email: " + email + "<br><br>" +
+"Phone Number: " + number + "<br><br>" +
+"password: " + password ;
+
+</script>
+
+</body>
+</html>
+
